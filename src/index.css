@@ -13,20 +13,17 @@
 
 .title {
   grid-area: a;
-  align-self: center;
   justify-self: center;
 }
 
 .altered-text-div {
   grid-area: b;
-  align-self: center;
   justify-self: center;
   text-wrap: normal;
 }
 
 .textarea-container {
   grid-area: c;
-  align-self: center;
   justify-self: center;
 }
 
