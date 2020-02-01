@@ -1,24 +1,31 @@
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: 200px;
+  grid-gap: 20px;
+  grid-auto-rows: 100px;
   grid-template-areas:
     ". . ."
     ". a ."
     ". b ."
+    ". c ."
     ". . .";
 }
 
-.altered-text-div {
+.title {
   grid-area: a;
+  align-self: center;
+  justify-self: center;
+}
+
+.altered-text-div {
+  grid-area: b;
   align-self: center;
   justify-self: center;
   text-wrap: normal;
 }
 
 .textarea-container {
-  grid-area: b;
+  grid-area: c;
   align-self: center;
   justify-self: center;
 }
@@ -33,10 +40,10 @@
 
 .normal-text {
   font-family: "Times New Roman";
-  font-size: 24px;
+  font-size: 14px;
 }
 
 .altered-text {
   font-family: "SansSerif";
-  font-size: 22px;
+  font-size: 13px;
 }

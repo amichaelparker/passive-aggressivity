@@ -9,6 +9,7 @@ const ConvertText = () => {
 
   const alterText = (event) => {
     if (event.key === 'Enter') {
+      event.preventDefault();
       const splitText = inputValue.split('');
       setAlteredText(splitText.map((letter, index) => {
         if (index % 5 === 0 && letter.match(/^[A-Za-z]+$/)) {
@@ -22,6 +23,7 @@ const ConvertText = () => {
 
   return (
     <div className='container'>
+      <h1 className='title'>Passive-Aggressivity</h1>
       <div className='altered-text-div'>
         {alteredText}
       </div>
